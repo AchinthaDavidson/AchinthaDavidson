@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-color: #333; */
+    color: #b96363;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+  
+  .navbar-list li {
+    margin: 0;
+  }
+  
+  .navbar-list a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+    }
+  
+    .navbar-list.open {
+      display: flex;
+    }
+  
+    /* .navbar-list li {
+      margin: 10px;
+    } */
+  }
+  
